@@ -38,16 +38,16 @@ http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
         <!-- 别名处理 -->
         <property name="typeAliasesPackage"
                   value="com.hujia.model"></property>
-        <property name="configuration" value="globalConfiguration"/>
+       <!-- <property name="configuration" value="globalConfiguration"/>-->
      </bean>
 
     <!--mybatisplus的全局配置-->
-    <bean id="globalConfiguration" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
+   <!-- <bean id="globalConfiguration" class="com.baomidou.mybatisplus.entity.GlobalConfiguration">
         <property name="dbColumnUnderline" value="true"></property>
         <property name="idType" value="0"/>
-        <!--表前缀配置-->
+        &lt;!&ndash;表前缀配置&ndash;&gt;
         <property name="tablePrefix" value="tbl_"/>
-    </bean>
+    </bean>-->
 
     
 

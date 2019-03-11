@@ -1,5 +1,6 @@
 package com.hujia.model;
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.enums.IdType;
@@ -12,6 +13,7 @@ public class Employee {
 
     @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
+    @TableField(value = "last_name")
     private String lastName;
     private String email;
     private Integer gender;
@@ -55,5 +57,17 @@ public class Employee {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
     }
 }
