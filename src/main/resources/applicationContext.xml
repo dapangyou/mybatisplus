@@ -39,6 +39,7 @@ http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
         <property name="typeAliasesPackage"
                   value="com.hujia.model"></property>
        <!-- <property name="configuration" value="globalConfiguration"/>-->
+        <property name="mapperLocations" value="classpath:mapper/EmployeeMapper.xml"/>
      </bean>
 
     <!--mybatisplus的全局配置-->
